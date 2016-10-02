@@ -13,5 +13,4 @@ Step4: git clone https://github.com/Rupinderwadali/Kivy-notification..git
 Step5: cd Kivy-notification/
 Step:6 python alarm.py
 
-It shows a pop-up. Fill the time and message and click on button to show the alert message. The work is in progress. So change the 
-minutes with little difference to show the demo :P.
+It shows a pop-up. Fill the time and message and click on button to show the alert message. The work is in progress. So change the minutes with little difference for demo :P.
