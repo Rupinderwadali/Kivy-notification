@@ -1,0 +1,68 @@
+#:kivy 1.0.9
+<AlarmBox>:
+    FloatLayout:
+        
+        Label:
+            text:'Reminder App'
+            pos:350, 450
+            text_size: self.size
+            halign: 'right'
+        TextInput:
+            id: txt
+            text:'00'
+            size_hint: None, None
+            size: 50, 50
+            pos: 100, 250
+        Label:
+            text:'Hours'
+            pos:70,170
+        TextInput:
+            id: txt1
+            text:'00'
+            size_hint: None, None
+            size: 50, 50
+            pos: 350, 250
+        Label:
+            text:'Minutes'
+            pos:330,170 
+        TextInput:
+            id: txt2
+            text:'00'
+            size_hint: None, None
+            size: 50, 50
+            pos: 500, 250  
+        Label:
+            text:'Seconds'
+            pos:480,170 	
+        TextInput:
+            id: notification_title
+            text: 'Put title here'
+            size_hint_x: 50
+            pos: 0, 0
+        TextInput:
+            id: notification_text
+            text: 'Put message here'
+            size_hint_x: 50
+            pos: 250, 0
+        Button:
+            text: 'notification'
+            size_hint_x:25
+            on_press: root.do_notify(txt.text, txt1.text)
+            pos: 500, 0
+	   
+        Circles:
+        
+<Circles>
+ 
+    canvas:
+        Color:
+            rgb: (255, 255, 255)
+        Ellipse:
+            size: 10, 10
+            pos: 260, 285
+ 
+        Ellipse:
+            size: 10, 10
+            pos: 260, 255
+
+    
